@@ -77,6 +77,7 @@
 		63891102199EB21D00B8998F /* FirebaseSimpleLogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63891101199EB21D00B8998F /* FirebaseSimpleLogin.framework */; };
 		63891104199EB24200B8998F /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63891103199EB24200B8998F /* Accounts.framework */; };
 		63891106199EB24800B8998F /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63891105199EB24800B8998F /* Social.framework */; };
+		C3F26AFD1C9B5E0200513DD4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3F26AFC1C9B5E0200513DD4 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -194,6 +195,7 @@
 		63891101199EB21D00B8998F /* FirebaseSimpleLogin.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseSimpleLogin.framework; sourceTree = "<group>"; };
 		63891103199EB24200B8998F /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		63891105199EB24800B8998F /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		C3F26AFC1C9B5E0200513DD4 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,9 +252,9 @@
 		5FFF76B0199C191F00AE0269 = {
 			isa = PBXGroup;
 			children = (
-				5F5814D5199E8D65000E0E87 /* Frameworks */,
 				5FFF76BB199C191F00AE0269 /* FireChat-Swift */,
 				5FFF76CE199C191F00AE0269 /* FireChat-SwiftTests */,
+				5F5814D5199E8D65000E0E87 /* Frameworks */,
 				5FFF76BA199C191F00AE0269 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -270,15 +272,12 @@
 			isa = PBXGroup;
 			children = (
 				5FFF76BE199C191F00AE0269 /* AppDelegate.swift */,
-				5FFF76C2199C191F00AE0269 /* Main.storyboard */,
-				5FFF76C5199C191F00AE0269 /* Images.xcassets */,
-				5FFF76BC199C191F00AE0269 /* Supporting Files */,
-				5FFF76E9199C19EC00AE0269 /* FireChat-Swift-Bridging-Header.h */,
 				5FCB62C0199E7C19008B93DB /* MessagesViewController.swift */,
 				638910FF199E968100B8998F /* LoginViewController.swift */,
 				5FF98CB119A51B8E0041E81A /* Message.swift */,
-				5F19222619D9D3D900D5C772 /* TwitterAuthHelper.m */,
-				5F19222819D9DA1500D5C772 /* TwitterAuthHelper.h */,
+				C3F26AFF1C9B5F2600513DD4 /* Layout */,
+				C3F26AFE1C9B5F1C00513DD4 /* ObjC */,
+				5FFF76BC199C191F00AE0269 /* Supporting Files */,
 			);
 			path = "FireChat-Swift";
 			sourceTree = "<group>";
@@ -286,6 +285,8 @@
 		5FFF76BC199C191F00AE0269 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5FFF76E9199C19EC00AE0269 /* FireChat-Swift-Bridging-Header.h */,
+				5FFF76C5199C191F00AE0269 /* Images.xcassets */,
 				5FFF76BD199C191F00AE0269 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -482,6 +483,24 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		C3F26AFE1C9B5F1C00513DD4 /* ObjC */ = {
+			isa = PBXGroup;
+			children = (
+				5F19222619D9D3D900D5C772 /* TwitterAuthHelper.m */,
+				5F19222819D9DA1500D5C772 /* TwitterAuthHelper.h */,
+			);
+			name = ObjC;
+			sourceTree = "<group>";
+		};
+		C3F26AFF1C9B5F2600513DD4 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				5FFF76C2199C191F00AE0269 /* Main.storyboard */,
+				C3F26AFC1C9B5E0200513DD4 /* LaunchScreen.storyboard */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -526,6 +545,8 @@
 		5FFF76B1199C191F00AE0269 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0720;
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Firebase;
 				TargetAttributes = {
@@ -562,6 +583,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3F26AFD1C9B5E0200513DD4 /* LaunchScreen.storyboard in Resources */,
 				5FFF76C4199C191F00AE0269 /* Main.storyboard in Resources */,
 				5FFF76C6199C191F00AE0269 /* Images.xcassets in Resources */,
 				5FFF77DB199C1F6C00AE0269 /* bubble_min_tailless.png in Resources */,
